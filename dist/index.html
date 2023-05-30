@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="dist/bundle.js" defer></script>
+    <script src="/dist/products.ts" defer></script>
+    <script src="/src/main/index.ts" defer></script>
+    
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-bg">
+            <div class="left-side"></div>
+            <div class="right-side"></div>
+        </div>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Shopping Cart</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">View More</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Shop Now!</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            <div>
+
+
+            </div>
+            <div class="shopping-bag">
+                <a href="./cart.html">
+                    <img src="./static/bag.png" alt="cart">
+                    Cart
+                </a>
+            </div>
+        </header>
+
+    <div class="products-list">
+        <div class="products">
+
+            <div class="item">
+                <div class="item-container">
+                    <div class="item-img">
+                        <img src="./static/apples.png" alt="apple">
+                    </div>
+                    <div class="desc">
+                        <h2>Apples</h2>
+                        <h2><small>$</small>5.00</h2>
+                        <p>
+                            A 5 lb bag of Fiji Organic Apples.
+                        </p>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <img src="./static/bag-plus.png" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-container">
+                    <div class="item-img">
+                        <img src="./static/brocolli.png" alt="brocolli">
+                    </div>
+                    <div class="desc">
+                        <h2>Brocolli</h2>
+                        <h2><small>$</small>3.00</h2>
+                        <p>
+                            3 stems of Organic Brocolli
+                        </p>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <img src="./static/bag-plus.png" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-container">
+                    <div class="item-img">
+                        <img src="./static/chicken.png" alt="chicken">
+                    </div>
+                    <div class="desc">
+                        <h2>Chicken</h2>
+                        <h2><small>$</small>10.00</h2>
+                        <p>
+                            Organic pasture-raised whole chicken
+                        </p>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <img src="./static/bag-plus.png" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-container">
+                    <div class="item-img">
+                        <img src="./static/bananas.webp" alt="banana">
+                    </div>
+                    <div class="desc">
+                        <h2>Bananas</h2>
+                        <h2><small>$</small>2.00</h2>
+                        <p>
+                            Organic Bananas
+                        </p>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <img src="./static/bag-plus.png" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-container">
+                    <div class="item-img">
+                        <img src="./static/milk.png" alt="milk">
+                    </div>
+                    <div class="desc">
+                        <h2>Milk</h2>
+                        <h2><small>$</small>5.00</h2>
+                        <p>
+                            Whole Milk 1-qt
+                        </p>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <img src="./static/bag-plus.png" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-container">
+                    <div class="item-img">
+                        <img src="./static/eggcart.png" alt="eggs">
+                    </div>
+                    <div class="desc">
+                        <h2>Eggs</h2>
+                        <h2><small>$</small>5.00</h2>
+                        <p>
+                            12 pack of eggs.
+                        </p>
+                    </div>
+
+                    <div class="add-to-cart">
+                        <img src="./static/bag-plus.png" alt="add to cart">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cart-header">
+                <div class="column1">Item</div>
+                <div class="column2">Unit price</div>
+                <div class="column3">Units</div>
+            </div>
+            <div class="cart-items">
+                <!-- cart items here -->
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="./static/apples.png" alt="apples">
+                        <h4>Apples</h4>
+                    </div>
+                    <div class="unit-price">
+                        <small>$</small>5.00
+                    </div>
+                    <div class="units">
+                        <div class="btn minus">-</div>
+                        <div class="number">1</div>
+                        <div class="btn plus">+</div>           
+                    </div>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                    Subtotal (1 items): $5
+                </div>
+                <div class="checkout">
+                    Proceed to checkout
+                </div>
+            </div>
+        </div>
+    
+    <script>
+        const porductsListEl = document.querySelector(".products-list");
+        const seeMoreBtn = document.querySelector(".see-more-btn");
+
+        seeMoreBtn.addEventListener('click', () => {
+        porductsListEl.scrollIntoView({behavior: "smooth"})
+        })
+        const loginContainer = document.getElementById("login-container")
+        const loginForm = loginForm()
+        loginContainer.appendChild(loginForm)
+        
+    </script>
+</body>
+</html>
